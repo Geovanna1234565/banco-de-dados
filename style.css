@@ -1,0 +1,52 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o container */
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #db6464;
+    border: 1px solid #4e0d0d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para o título */
+.todo-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para as tarefas */
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para as caixas de seleção */
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para os rótulos */
+.todo-item label {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo para tarefas concluídas */
+.todo-item input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #999;
+}
